@@ -37,9 +37,9 @@ public class Loops{
 
 
 
-Scanner sc = new Scanner(System.in);
-int choice;
-int marks;
+// Scanner sc = new Scanner(System.in);
+// int choice;
+// int marks;
 // int n = sc.nextInt();
 // int n2 = sc.nextInt();
 // int sum =0;
@@ -70,20 +70,52 @@ int marks;
 //     System.out.println(i);
 //     }
 
-do{
-    System.out.println("Enter 1 to print marks, 0 to stop.");
-    choice = sc.nextInt();
-    if(choice==1){
-        System.out.println("Enter student marks");
-        marks = sc.nextInt();
-        if(marks>=90){
-            System.out.println("This is good");
-        }
-        else if(marks>=80 || marks>=60){
-            System.out.println("This is also good");
-        }while()
-    }
-}
+// do{
+//     System.out.println("Enter 1 to print marks, 0 to stop.");
+//     choice = sc.nextInt();
+//     if(choice==1){
+//         System.out.println("Enter student marks");
+//         marks = sc.nextInt();
+//         if(marks>=90){
+//             System.out.println("This is good");
+//         }
+//         else if(marks>=80 || marks>=60){
+//             System.out.println("This is also good");
+
+//         }
+//         else if(marks<=59 || marks<=0){
+//             System.out.println("This is good as well");
+//         }
+
+//         else{
+//             System.out.println("Enter valid marks");
+//         }
+        
+//     }
+// }while(choice!=0); 
+//         System.out.println("Program Stopped");
+    
+// System.out.println("Enter a number");
+// Scanner sc = new Scanner(System.in);
+// int n= sc.nextInt();
+// boolean isPrime=true;
+// if(n<=1){
+//     System.out.println(n + " is not a prime number");
+// }
+// else{
+//     for(int i=2;i<n;i++){
+//         if(n%i==0){
+//             isPrime=false;
+//             break;
+//         }
+//     }
+// }
+// if(isPrime){
+//     System.out.println(n + " is a prime number");
+// }
+// else{
+//     System.out.println(n + " is not a prime number");
+// }
 
 
     }
