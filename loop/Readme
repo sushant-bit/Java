@@ -1,0 +1,3 @@
+for(initialisation;condition;updation){
+    //code to be executed
+}
