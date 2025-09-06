@@ -33,24 +33,24 @@
 //    }
 // } 
 
-// import java.util.*;
-// public class FunctionandMethods{
-//   public static int multiplyNumbers(int a, int b){
-//       int product = a * b;
-//       return product;
-//    }
-//    public static void main(String[] args) {
-//       System.out.println("Enter two numbers to find their sum");
-//       Scanner sc = new Scanner(System.in);
-//       int a=sc.nextInt();
-//       int b=sc.nextInt();
-//       int product =multiplyNumbers(a, b);
+import java.util.*;
+public class FunctionandMethods{
+  public static int multiplyNumbers(int a, int b){
+      int product = a * b;
+      return product;
+   }
+   public static void main(String[] args) {
+      System.out.println("Enter two numbers to find their sum");
+      Scanner sc = new Scanner(System.in);
+      int a=sc.nextInt();
+      int b=sc.nextInt();
+      int product =multiplyNumbers(a, b);
 
-//      System.out.println("The sum of two numbers is " + product);
+     System.out.println("The sum of two numbers is " + product);
 
       
-//    }
-// } 
+   }
+} 
 
 
 import java.util.*;
