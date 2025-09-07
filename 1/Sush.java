@@ -5,6 +5,7 @@ public class Sush{
         System.out.println("Sushant Adhikari");
         System.out.println("I love to watch Movies");
        System.out.println("I love to play football");
-       
+       System.out.println("I love Coding!");
+       System.out.println("I love to listen to music");
     }
 }
