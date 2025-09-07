@@ -12,5 +12,6 @@ public class Sush{
          System.out.println("I love to read books");
             System.out.println("I love to cook");
             System.out.println("I love to dance");
+            System.out.println("I love to sing");
     }
 }
