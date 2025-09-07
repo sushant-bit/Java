@@ -7,6 +7,7 @@ public class Sush{
        System.out.println("I love to play football");
        System.out.println("I love Coding!");
        System.out.println("I love to listen to music");
-       system.out.println("I love to travel");
+       System.out.println("I love to travel");
+       System.out.println("I love to play video games");
     }
 }
