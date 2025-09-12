@@ -16,3 +16,4 @@ public class Sush{
             System.out.println("I love to paint");
     }
 }
+
