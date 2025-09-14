@@ -31,19 +31,31 @@ public class Exercise {
 // }
 
 
-public static int GreaterNumber(int a,int b){
-    if(a>b){
-        return a;
-    }
-    else{
-        return b;
-    }
+// public static int GreaterNumber(int a,int b){
+//     if(a>b){
+//         return a;
+//     }
+//     else{
+//         return b;
+//     }
+// }
+
+// public static void main(String[] args) {
+//     Scanner sc =new Scanner(System.in);
+//     int a = sc.nextInt();
+//     int b = sc.nextInt();
+//     System.out.println("Greater number is :"+ GreaterNumber(a, b));
+// }
+
+
+public static void CircumferenceOfCircle(int r){
+    double circumference = 2* Math.PI*r;
+    System.out.println("Circumference of circle is :"+circumference);
 }
 
 public static void main(String[] args) {
     Scanner sc =new Scanner(System.in);
-    int a = sc.nextInt();
-    int b = sc.nextInt();
-    System.out.println("Greater number is :"+ GreaterNumber(a, b));
+    int r = sc.nextInt();
+    CircumferenceOfCircle(r);
 }
 }
