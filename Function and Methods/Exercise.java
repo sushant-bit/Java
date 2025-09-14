@@ -12,21 +12,38 @@ public class Exercise {
 //         System.out.println("Average of three number is :"+ CalculateAverage(a, b, c));
 //     }
 
-public static void PrintOddSum(int n){
-    int sum=0;
-    for(int i=1;i<=n;i++){
-        if(i%2!=0){
-            sum=sum+i;
-        }
+// public static void PrintOddSum(int n){
+//     int sum=0;
+//     for(int i=1;i<=n;i++){
+//         if(i%2!=0){
+//             sum=sum+i;
+//         }
 
+//     }
+//     System.out.println("Sum of odd numbers is :"+sum);
+
+// }
+
+// public static void main(String[] args) {
+//     Scanner sc =new Scanner(System.in);
+//     int n = sc.nextInt();
+//     PrintOddSum(n);
+// }
+
+
+public static int GreaterNumber(int a,int b){
+    if(a>b){
+        return a;
     }
-    System.out.println("Sum of odd numbers is :"+sum);
-
+    else{
+        return b;
+    }
 }
 
 public static void main(String[] args) {
     Scanner sc =new Scanner(System.in);
-    int n = sc.nextInt();
-    PrintOddSum(n);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    System.out.println("Greater number is :"+ GreaterNumber(a, b));
 }
 }
