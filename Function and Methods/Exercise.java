@@ -80,13 +80,45 @@ public class Exercise {
 // }
 
 
+// public static void main(String[] args) {
+//     Scanner sc =new Scanner(System.in);
+//     int a = sc.nextInt();
+//     int n=1;
+//     do{
+//         System.out.println("i am checking infinite loop");
+//         n++;
+//     }while(n<0);
+// }
+
+
 public static void main(String[] args) {
     Scanner sc =new Scanner(System.in);
-    int a = sc.nextInt();
-    int n=1;
+    
+    int positivecounter =0;
+    int negativecounter =0;
+    int zerocounter =0;
+    char choice;
     do{
-        System.out.println("i am checking infinite loop");
-        n++;
-    }while(n<0);
+System.out.println("Enter a number");
+int num =sc.nextInt();
+if(num>0){
+    positivecounter++;
+
+}
+else if(num<0){
+    negativecounter++;
+}
+else{
+    zerocounter++;
+}
+System.out.println("Do you want to continue y/n");
+choice = sc.next().charAt(0);
+
+    }while(choice=='y'|| choice =='Y');
+    System.out.println("\nSummary");
+    System.out.println("Total positive numbers :"+positivecounter);
+    System.out.println("Total negative numbers :"+negativecounter);
+    System.out.println("Total zeros :"+zerocounter);
+    
 }
 }
