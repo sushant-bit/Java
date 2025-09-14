@@ -48,14 +48,34 @@ public class Exercise {
 // }
 
 
-public static void CircumferenceOfCircle(int r){
-    double circumference = 2* Math.PI*r;
-    System.out.println("Circumference of circle is :"+circumference);
+// public static void CircumferenceOfCircle(int r){
+//     double circumference = 2* Math.PI*r;
+//     System.out.println("Circumference of circle is :"+circumference);
+// }
+
+// public static void main(String[] args) {
+//     Scanner sc =new Scanner(System.in);
+//     int r = sc.nextInt();
+//     CircumferenceOfCircle(r);
+// }
+
+
+public static void CanVoteOrNot(int age){
+    if(age>=18){
+        System.out.println("You are eligible to vote");
+    }
+    else if(age<0){
+        System.out.println("Age cannot be negative");
+    }
+    else{
+        System.out.println("You are not eligible to vote");
+    }
 }
+
 
 public static void main(String[] args) {
     Scanner sc =new Scanner(System.in);
-    int r = sc.nextInt();
-    CircumferenceOfCircle(r);
+    int age = sc.nextInt();
+    CanVoteOrNot(age);
 }
 }
