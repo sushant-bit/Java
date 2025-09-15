@@ -138,19 +138,35 @@ public class Exercise {
 //     PowerFunction(x, n);
 // }
 
-public static int GreatestCommonDivisor(int a,int b){
-while(b!=0){
-    int num =b;
-    b=a%b;
-    a=num;  
-}return a;
-}
+// public static int GreatestCommonDivisor(int a,int b){
+// while(b!=0){
+//     int num =b;
+//     b=a%b;
+//     a=num;  
+// }return a;
+// }
+
+
+// public static void main(String[] args) {
+//     Scanner sc=  new Scanner(System.in);
+//     int a=sc.nextInt();
+//     int b=sc.nextInt();
+//     System.out.println("Greatest common divisor of "+a+" and "+b+" is :"+GreatestCommonDivisor(a, b));
+// }
 
 
 public static void main(String[] args) {
-    Scanner sc=  new Scanner(System.in);
-    int a=sc.nextInt();
-    int b=sc.nextInt();
-    System.out.println("Greatest common divisor of "+a+" and "+b+" is :"+GreatestCommonDivisor(a, b));
+    Scanner sc =new Scanner(System.in);
+    System.out.println("Enter number of terms: ");
+    int n=sc.nextInt();
+    int first=0,second=1;
+    System.out.println("Fibonacci Series:");
+    for(int i=1;i<=n;i++){
+        System.out.print(first+" ");
+        int arko = first+second;
+        first=second;
+        second=arko;
+    }
+    sc.close();
 }
 }
