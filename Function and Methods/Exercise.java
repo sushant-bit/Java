@@ -123,18 +123,34 @@ public class Exercise {
 // }
 
 
-public static void PowerFunction(int x, int n){
-    int result=1;
-    for(int i=1;i<=n;i++){
-        result *=x;
-    }
-    System.out.println(x+" raised to the power "+n+" is :"+result);
+// public static void PowerFunction(int x, int n){
+//     int result=1;
+//     for(int i=1;i<=n;i++){
+//         result *=x;
+//     }
+//     System.out.println(x+" raised to the power "+n+" is :"+result);
+// }
+
+// public static void main(String[] args) {
+//     Scanner sc=  new Scanner(System.in);
+//     int x=sc.nextInt();
+//     int n=sc.nextInt();
+//     PowerFunction(x, n);
+// }
+
+public static int GreatestCommonDivisor(int a,int b){
+while(b!=0){
+    int num =b;
+    b=a%b;
+    a=num;  
+}return a;
 }
+
 
 public static void main(String[] args) {
     Scanner sc=  new Scanner(System.in);
-    int x=sc.nextInt();
-    int n=sc.nextInt();
-    PowerFunction(x, n);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    System.out.println("Greatest common divisor of "+a+" and "+b+" is :"+GreatestCommonDivisor(a, b));
 }
 }
