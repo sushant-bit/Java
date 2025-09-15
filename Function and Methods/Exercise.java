@@ -91,34 +91,50 @@ public class Exercise {
 // }
 
 
+// public static void main(String[] args) {
+//     Scanner sc =new Scanner(System.in);
+    
+//     int positivecounter =0;
+//     int negativecounter =0;
+//     int zerocounter =0;
+//     char choice;
+//     do{
+// System.out.println("Enter a number");
+// int num =sc.nextInt();
+// if(num>0){
+//     positivecounter++;
+
+// }
+// else if(num<0){
+//     negativecounter++;
+// }
+// else{
+//     zerocounter++;
+// }
+// System.out.println("Do you want to continue y/n");
+// choice = sc.next().charAt(0);
+
+//     }while(choice=='y'|| choice =='Y');
+//     System.out.println("\nSummary");
+//     System.out.println("Total positive numbers :"+positivecounter);
+//     System.out.println("Total negative numbers :"+negativecounter);
+//     System.out.println("Total zeros :"+zerocounter);
+    
+// }
+
+
+public static void PowerFunction(int x, int n){
+    int result=1;
+    for(int i=1;i<=n;i++){
+        result *=x;
+    }
+    System.out.println(x+" raised to the power "+n+" is :"+result);
+}
+
 public static void main(String[] args) {
-    Scanner sc =new Scanner(System.in);
-    
-    int positivecounter =0;
-    int negativecounter =0;
-    int zerocounter =0;
-    char choice;
-    do{
-System.out.println("Enter a number");
-int num =sc.nextInt();
-if(num>0){
-    positivecounter++;
-
-}
-else if(num<0){
-    negativecounter++;
-}
-else{
-    zerocounter++;
-}
-System.out.println("Do you want to continue y/n");
-choice = sc.next().charAt(0);
-
-    }while(choice=='y'|| choice =='Y');
-    System.out.println("\nSummary");
-    System.out.println("Total positive numbers :"+positivecounter);
-    System.out.println("Total negative numbers :"+negativecounter);
-    System.out.println("Total zeros :"+zerocounter);
-    
+    Scanner sc=  new Scanner(System.in);
+    int x=sc.nextInt();
+    int n=sc.nextInt();
+    PowerFunction(x, n);
 }
 }
