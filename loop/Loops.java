@@ -30,8 +30,6 @@ public class Loops{
 // }
 
 
-
-
 // do{
 //     System.out.println("Sushant");
 //     i++;
